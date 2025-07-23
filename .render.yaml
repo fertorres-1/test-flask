@@ -1,8 +1,6 @@
 services:
   - type: web
     name: flask-app
-    env: python
-    buildCommand: "pip install -r requirements.txt"
-    startCommand: "gunicorn run:app"
-    pythonVersion: 3.11.9
+    env: docker
+    plan: free
     autoDeploy: true
